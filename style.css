@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+    padding: 0;
+}
+.css{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #8feae3,#8080da);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 50px;
+    z-index: 1;
+}
+
+/* message */
+.message{
+    width: 1000px;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.nav{
+    width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.nav__icon{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav__icon-contact{
+    
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.nav__menu{
+    position: relative;
+    top: 0;
+}
+
+
+.chat{
+    margin-top: 40px;
+    overflow-y: auto;
+    height: 430px;
+}
+.chat::-webkit-scrollbar{
+    display: none;
+}
+.yourchat{
+    margin-left: 30px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.yourchat__img img, .mychat__img img{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.yourchat__sent,.mychat__sent{
+    background: #7cb6c7;
+    border-radius: 30px;
+    
+    
+}
+
+.mychat{
+    margin-right: 30px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.yourchat__sent h1,.mychat__sent h1{
+    font-size: 24px;
+    color: #000;
+    
+    padding: 20px 10px;
+    
+}
+.yourmessage,.mymessage{
+   position: relative; 
+   
+}
+.yourmessage span{
+    font-size: 14px;
+    color: #dee4f1;
+    position: absolute;
+    left: 0;
+}
+.mymessage span{
+    font-size: 14px;
+    color: #dee4f1;
+    position: absolute;
+    right: 0;
+}
+
+/*  */
+
+.send{
+    height: 140px;
+    padding-top: 20px;
+}
+.send__message{
+    background: rgba(0, 0, 0, 0.2);
+    width: 940px;
+    height: 100px;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.send__message input{
+    width: 600px;
+    height: 80px;
+    background: transparent;
+    border: none;
+    outline: none;
+    align-self: flex-start;
+    font-size: 25px;
+    color: #000;
+}
+.send__message input::placeholder{
+    font-size: 25px;
+    color: #ffe1e1;
+}
+/* chat */
+.menu{
+    width: 500px;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+.menu::-webkit-scrollbar{
+    display: none;
+}
+.search{
+    width: 400px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    z-index: 0;
+}
+.search input{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+}
+i{
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.profile__id{
+    width: 500px;
+    height: 140px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profile__id:hover{
+    background:rgba(0, 0, 0, 0.2);
+}
+.profile__img ,.nav__profile{
+    position: relative;
+}
+.profile__img img ,.nav__profile img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.profile__img > span ,.nav__profile > span{
+    background: #65c552;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 30px;
+    border: #ffffff solid 2px;
+    bottom: 0;
+    right:15px;
+}
+.profile__img > span.profile--off{
+    background: #a54328;
+}
+.profile__info,.nav__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.profile__info h1,.nav__info h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+
+    
+}
+.profile__info p, .nav__info p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+}
+.profile__id + .profile__id{
+    margin-top: 20px;
+}
+
